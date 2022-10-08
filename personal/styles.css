@@ -1,0 +1,258 @@
+* {
+  color: aliceblue;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #696969;
+  margin-left: calc(10%);
+  margin-right: calc(10%);
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+h1,
+h2 {
+  padding: 0;
+  margin: 0%;
+}
+nav {
+  background: rgb(20, 20, 20);
+  padding: 0;
+  color: white;
+}
+
+.container {
+  display: flex;
+  background-color: #474747;
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.main-container {
+  background-color: #474747;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: 0;
+  border-radius: 0.5rem;
+}
+.books {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-head {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.book-body {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.learning {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+.learn-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+.book-card {
+  height: 18rem;
+  width: 12rem;
+  background: linear-gradient(
+      198.53deg,
+      rgba(99, 129, 146, 0.7) -0.28%,
+      rgba(100, 199, 255, 0) 61.69%
+    ),
+    url(image.png);
+  box-shadow: 0px 4px 20px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  margin: 1rem;
+  transition: transform .1s; 
+}
+
+.book-card:hover{
+  transform: scale(1.02); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+
+}
+.bc1 {
+  background: linear-gradient(
+      198.53deg,
+      rgba(99, 129, 146, 0.7) -0.28%,
+      rgba(100, 199, 255, 0) 61.69%
+    ),
+    url(bc1.jpg);
+  box-shadow: 0px 4px 20px 6px rgba(0, 0, 0, 0.25);
+
+  background-size: cover;
+}
+.bc2 {
+  background: linear-gradient(
+      198.53deg,
+      rgba(99, 129, 146, 0.7) -0.28%,
+      rgba(100, 199, 255, 0) 61.69%
+    ),
+    url(bc2.jpg);
+  box-shadow: 0px 4px 20px 6px rgba(0, 0, 0, 0.25);
+
+  background-size: cover;
+}
+.bc3 {
+  background: linear-gradient(
+      198.53deg,
+      rgba(99, 129, 146, 0.7) -0.28%,
+      rgba(100, 199, 255, 0) 61.69%
+    ),
+    url(bc3.jpg);
+  box-shadow: 0px 4px 20px 6px rgba(0, 0, 0, 0.25);
+
+  background-size: cover;
+}
+.learn-card {
+  height: 4rem;
+  width: 85%;
+  background-color: rgb(184, 118, 204);
+  margin: 1rem;
+  border-radius: 10px;
+  transition: transform .2s; 
+}
+.learn-card:hover{
+    transform: scale(1.01); 
+
+}
+.art {
+  justify-content: space-between;
+}
+.art-head {
+  min-width: 60%;
+}
+.art-body {
+  display: flex;
+  flex-direction: column;
+}
+
+.community {
+  background-color: cornflowerblue;
+  flex-direction: column;
+  background: linear-gradient(
+    123.14deg,
+    #b44595 5.51%,
+    rgba(54, 111, 136, 0.8) 41.41%,
+    rgba(11, 11, 11, 0.2) 75.14%
+  );
+  padding: 0;
+}
+.community > h1 {
+  padding: 1rem;
+}
+
+.server {
+  width: 100%;
+  height: 6rem;
+  background: linear-gradient(
+      90.04deg,
+      rgba(99, 154, 204, 0.78) 35.49%,
+      rgba(99, 154, 204, 0) 95.27%
+    ),
+    url(image.png);
+  margin: 1rem;
+  margin-left: 0;
+  margin-right: 0;
+  padding: 0px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  transition: transform .2s; 
+
+}
+.server >h2{
+  padding: 0.5rem;
+  
+}
+
+.server:hover{
+
+    transform: scale(1.02); 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 3px;
+
+
+}
+.server1{
+  background-image: url("spiral.jpg");
+}
+.server1:hover {
+  background: linear-gradient(
+      90.04deg,
+      rgba(99, 154, 204, 0.78) 35.49%,
+      rgba(99, 154, 204, 0) 95.27%
+    ),
+    url("spiral.jpg");
+}
+.server2{
+  background-image: url("bd.jpg");
+
+}
+.server2:hover {
+  background: linear-gradient(
+      90.04deg,
+      rgba(99, 154, 204, 0.78) 35.49%,
+      rgba(99, 154, 204, 0) 95.27%
+    ),
+    url("bd.jpg");
+}
+.aba {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.mission {
+  flex-direction: column;
+}
+.imgctr {
+  display: flex;
+  justify-content: center;
+}
+.form-block {
+  display: block;
+  width: 80%;
+  resize: none;
+  height: 2rem;
+  margin: 0.5rem;
+}
+
+.contact-form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.form-c {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+}
+.about-image {
+  width: 100%;
+  height: 5rem;
+}

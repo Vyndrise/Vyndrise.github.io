@@ -1,0 +1,148 @@
+body {
+  background-color: #000000;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.start-contain {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: left;
+  flex-wrap: wrap;
+}
+.container {
+  background: #2d2d2d;
+  height: 300px;
+  width: 300px;
+  margin: 10px;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+.container > h2 {
+  padding-top: 1.2rem;
+  padding-left: 1.2rem;
+  padding-bottom: 0;
+  margin: 0;
+  font-family: Verdana;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 42px;
+}
+.container > ul {
+  font-family: Verdana;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 28px;
+  color: #a5a5a5;
+}
+.container > hr {
+  width: 80%;
+  text-align: left;
+  margin-left: 1.2rem;
+}
+
+.pri-a > h2,
+hr {
+  color: #f88888;
+}
+.pri-a > hr {
+  border: 1px solid #f88888;
+}
+.pri-b > h2,
+hr {
+  color: #88f888;
+}
+.pri-b > hr {
+  border: 1px solid #88f888;
+}
+.pri-c > h2,
+hr {
+  color: #8888f8;
+}
+.pri-c > hr {
+  border: 1px solid #8888f8;
+}
+
+.pri-d > h2,
+hr {
+  color: #f2d957;
+}
+.pri-d > hr {
+  border: 1px solid #f2d957;
+}
+.pri-a,
+.pri-b,
+.pri-c,
+.pri-d {
+  border: solid red;
+  border-color: transparent;
+}
+.pri-a:hover {
+  border: solid #f88888;
+}
+.pri-b:hover {
+  border: solid #88f888;
+}
+.pri-c:hover {
+  border: solid #8888f8;
+}
+.pri-d:hover {
+  border: solid #f2d957;
+}
+
+.pri-a:hover + body {
+  background-color: blue;
+}
+
+.search-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: 18px;
+  background-color: #2d2d2d;
+  width: 75vw;
+  margin: 20px auto;
+}
+.search-box > input {
+  width: 65%;
+  border-radius: 10px;
+  display: inline-block;
+  background-color: #8b8b8b;
+  height: 20px;
+}
+
+.date-a {
+  color: aliceblue;
+  float: right;
+}
+
+/* unvisited link */
+a:link {
+  color: #a5a5a5;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: #a5a5a5;
+}
+
+/* mouse over link */
+a:hover {
+  color: #a5a5a5;
+  text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+  color: #a5a5a5;
+}

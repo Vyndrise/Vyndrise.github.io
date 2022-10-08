@@ -1,0 +1,134 @@
+:root{
+    --bgd: #1f2937;
+    --fd: white;
+
+}
+
+*{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+nav{
+    display:flex;
+    background-color: var(--bgd);
+    color:white;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 80px 10px 80px;
+}
+
+.headerlist{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.headerlist>li{
+    padding: 10px;
+}
+
+.s1{
+    display: flex;
+    align-items: center;
+    padding: 200px 20% 200px 20%;
+    color: white;
+    background-color: var(--bgd);
+}
+.s1-card{
+    width: 50%;
+}
+.s1-card >h1{
+    color: white;
+    font-size:  56px;
+
+}
+.s1-img{
+    width: 50%;
+    background-color: white;
+    height: 300px;
+}
+.s2{
+    display: flex;
+    padding: 200px 20% 200px 20%;
+    flex-direction: column;
+    text-align: center;
+}
+.s2-cardbox{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+
+
+}
+.s2-card{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 220px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+.s2-card-img{
+    width: 200px;
+    height: 200px;
+    border: 5px;
+    border-radius: 25px;
+    border-color: blue;
+    border-style: solid;
+    margin-bottom: 10px;
+}
+.s3{
+    padding: 200px 20% 200px 20%;
+    background-color: gray;
+}
+.quote{
+    display: block;
+    font-size: 25px;
+}
+.author{
+    text-align: right;
+    font-size: 20px;
+display: inline-block;
+width: 100%;
+}
+
+.s4{
+    padding: 100px 20% 100px 20%;
+}
+.s4-pop{
+    background-color: blue;
+    padding: 5%;
+    display: flex;
+    color:white;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    border-radius: 20px;
+    
+}
+button{
+    font-size: 15px;
+    padding: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+    color:white;
+    background-color: blue;
+    border: 3px solid;
+    border-color:white;
+    border-radius: 10px;
+}
+footer{
+
+    background-color: var(--bgd);
+    color: white;
+    padding: 15px;
+}
+.final{
+    display: block;
+    text-align: center;
+
+}

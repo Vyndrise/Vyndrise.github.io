@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>
+        Apps
+    </title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="topFlex">   
+        <div>        <span class="tiles">
+            <h1> Apps</h1>
+        </span></div> 
+
+</div>
+
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="card-box">
+        <div class="card-lane">
+            <div class="card">
+                <h2>Average Calculator</h2>
+                <h3>How many shares do you own</h3>
+                <input type="number" name="own1" id="own1" class="typeAvg" required>
+                <h3>What is the current average purchase price</h3>
+                <input type="number" name="price1" id="price1" class="typeAvg" required>
+                <h3>How many more shares would you like to buy</h3>
+                <input type="number" name="own2" id="own2" class="typeAvg" required>
+                <h3>At what price</h3>
+                <input type="number" name="price2" id="price2" class="typeAvg" required>
+            </div>
+            <div class="card-out neu">
+                <h2>Average Results</h2>
+                <h3 id="average-res">
+                    Result will be displayed here!
+                </h3>
+            </div>
+        </div>
+        <div class="card-lane">
+            <div class="card">
+                <h2>Net Profit Calculator</h2>
+                <h3>Buying Price</h3>
+                <input type="number" name="bp1" id="bp1" class="typeNet" required>
+                <h3>Selling Price</h3>
+                <input type="number" name="sp1" id="sp1" class="typeNet" required>
+                <h3>Number of Shares</h3>
+                <input type="number" name="no1" id="no1" class="typeNet" required>
+            </div>
+            <div class="card-out neu" id="netcard">
+                <h2>Net Results</h2>
+                <h3 id="net-res">
+                    Result will be displayed here!
+                </h3>
+            </div>
+        </div>
+        <div class="card-lane">
+            <div class="card">
+                <h2>Randomizer</h2>
+                <h3>Limit</h3>
+                <input type="number" name="d6limit" id="d6limit" class="typed6" value="6" required>
+                <input type="submit" id ="d6submit" value="Roll">
+            </div>
+            <div class="card-out neu" id="netcard">
+                <h2>Randomizer Results</h2>
+                <h3 id="dice-result">
+                    Result will be displayed here!
+                </h3>
+            </div>
+        </div>
+    </div>
+    <script src="script.js" async defer></script>
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Tips Calculator</title>
+</head>
+
+<body>
+    <div class="Card-holder">
+        <div class="inputcard">
+            <h2>Tip Calculator</h2>
+            <h3>Total Tips</h3>
+            <input type="number" name="totalTips" id="totalTips"  required>
+            <h3>Number of Servers</h3>
+            <input type="number" name="serverNo" id="serverNo" class="TipCalculator" value="1" required>
+            <h3>Number of Cooks</h3>
+            <input type="number" name="cookNo" id="cookNo" class="TipCalculator" value = "1" required>
+
+            <input type="submit" id ="calculateSubmit" value="Calculate">
+        </div>
+        <div class="outputcard">
+            <h2>Total Split</h2>
+            <h3 id="tipResult">
+                Result will be displayed here!
+            </h3>
+        </div>
+    </div>
+</body>
+<script>
+
+
+function calculateTip(e, current) {
+    e.preventDefault();
+
+
+
+}
+calculateSubmit.addEventListener('click',function(e){
+    // values
+    const totalWhole = parseInt(document.querySelector("#totalTips").value);
+    const number_of_cooks = parseInt(document.querySelector("#cookNo").value);
+    const number_of_servers = parseInt(document.querySelector("#serverNo").value);
+    const calculateSubmit = document.querySelector('#calculateSubmit');
+    //function
+    e.preventDefault();
+    var split_server = (totalWhole * 0.80)/number_of_servers;
+    var split_cook = (totalWhole * 0.20)/number_of_cooks;
+    console.log(split_server);
+    resultx = `Server Tips: ${split_server.toFixed(2)} Cook Tips: ${split_cook.toFixed(2)}`;
+    document.querySelector("#tipResult").innerHTML = resultx;
+    console.log(document.querySelector("#tipResult").innerHTML);
+
+});
+    </script>
+
+</html>

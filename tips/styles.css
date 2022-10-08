@@ -1,0 +1,65 @@
+*{
+    font-family: Arial, 
+    Helvetica, sans-serif;
+}
+input[type=number]{
+
+    font-size: auto;
+    color: #3e5e56;
+    border:solid;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: rgb(110, 179, 185);
+    background-color: #bdf8e8;
+    font-size: 20px;
+
+}
+
+
+input[type=submit]{
+    display: block;
+    background-color: #539c9c;
+    border: none;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+html{
+    margin: 0;
+}
+body{
+    display:flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(255, 246, 235);
+}
+
+.inputcard{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color:rgb(134, 203, 188);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.outputcard{
+    background-color: rgb(153, 201, 151);
+    padding: 20px;
+    border-radius: 10px;
+    margin:10px;
+}
+.outputcard > h2, .outputcard>h3{
+    color: rgb(58, 118, 60);
+}
+.inputcard > h2, .inputcard>h3{
+    color: rgb(58, 114, 118);
+
+}

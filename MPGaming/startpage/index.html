@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="css/styles.css" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+<head>
+  <title>Homepage</title>
+
+</head>
+
+<body>
+  <div class="start-contain">
+    <div class="card-container">
+      <div class="container pri-a">
+        <h2>Chill</h2>
+        <hr />
+        <ul>
+          <a href="https://www.youtube.com">Youtube</a>
+        </ul>
+        <ul>
+          <a href="https://www.Twitch.tv">Twitch</a>
+        </ul>
+        <ul>
+          <a href="https://www.reddit.com">Reddit</a>
+        </ul>
+        <ul>
+          <a href="https://www.twitter.com">Twitter</a>
+        </ul>
+      </div>
+      <div class="container pri-b">
+        <h2>Productivity</h2>
+        <hr />
+        <ul>
+          <a href="https://play.google.com/books">Books</a>
+        </ul>
+        <ul>
+          <a href="https://onedrive.live.com/">OneNote</a>
+        </ul>
+        <ul>
+          <a href="https://docs.google.com/document/u/0/">Docs</a>
+        </ul>
+        <ul>
+          <a href="https://drive.google.com/drive/u/0/my-drive">Drive</a>
+        </ul>
+      </div>
+      <div class="container pri-c">
+        <h2>Front End</h2>
+        <hr />
+        <ul>
+          YT Playlist
+        </ul>
+        <ul>
+          <a href="https://cs50.harvard.edu/web/2020/">CS50x</a>
+        </ul>
+        <ul>
+          Courses
+        </ul>
+      </div>
+      <div class="container pri-d">
+        <h2>Connect</h2>
+        <hr />
+        <ul>
+          <a href="https://web.whatsapp.com">WhatsApp</a>
+        </ul>
+        <ul>
+          <a href="https://discord.com/channels/@me">Discord</a>
+        </ul>
+        <ul>
+          <a href="https://mail.google.com/mail/u/0/">Gmail Primary</a>
+        </ul>
+        <ul>
+          <a href="https://mail.google.com/mail/u/1/">Gmail Secondary</a>
+        </ul>
+      </div>
+      <div class="container pri-a">
+        <h2>School</h2>
+        <hr />
+        <ul>
+          MyLambton
+        </ul>
+        <ul>
+          Moodle
+        </ul>
+        <ul>
+          Textbooks
+        </ul>
+        <ul>
+          Calendar
+        </ul>
+      </div>
+      <div class="container pri-b">
+        <h2>To Do</h2>
+        <hr />
+        <ul>
+          Task 1
+        </ul>
+        <ul>
+          Task 2
+        </ul>
+        <ul>
+          Task 3
+        </ul>
+        <ul>
+          Task 4
+        </ul>
+      </div>
+      <div class="container pri-c">
+        <h2>Back End</h2>
+        <hr />
+        <ul>
+          Node.js
+        </ul>
+        <ul>
+          Django
+        </ul>
+        <ul>
+          Courses
+        </ul>
+      </div>
+      <div class="container pri-d">
+        <h2>Project</h2>
+        <hr />
+        <ul>
+          Project I
+        </ul>
+        <ul>
+          Project II
+        </ul>
+        <ul>
+          Project III
+        </ul>
+        <ul>
+          Project IV
+        </ul>
+      </div>
+    </div>
+    <div class="search-box">
+
+      <input type="text" name="search" id="search"> <span id="date-a"></span>
+      <script>
+        function updateTime() {
+          var currentTime = new Date()
+          var hours = currentTime.getHours()
+          var minutes = currentTime.getMinutes()
+          if (minutes < 10) {
+            minutes = "0" + minutes
+          }
+          var t_str = hours + ":" + minutes + " ";
+          if (hours > 11) {
+            t_str += "PM";
+          } else {
+            t_str += "AM";
+          }
+          document.getElementById('date-a').innerHTML = t_str;
+        }
+        setInterval(updateTime, 1000);
+
+      </script>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Page Title</title>
+</head>
+<body>
+  <script>
+    // Your JavaScript goes here!
+    function add7(number){
+        console.log(7+number)
+        return 7+number;
+    }
+    function multiply(number1, number2){
+        return number1+number2;
+    }
+    function capitalize(stringy){
+        return (stringy.toUpperCase()).slice(0,1) + stringy.slice(1).toLowerCase(); 
+    }
+    function lastletter(stringy){
+        return stringy.slice(-1)
+    }
+    console.log("Hello, World!")
+
+    function playRound(playerSelection, computerSelection) {
+    playerSelection = playerSelection.toUpperCase();
+    computerSelection = getComputerChoice();
+  if(playerSelection === "ROCK"){
+    if(computerSelection === "SCISSORS"){
+        return "Win, Rock beats Scissors";
+    }
+    if(computerSelection === "ROCK"){
+        return "Draw, Rock and Rock";
+    }
+    if(computerSelection === "PAPER"){
+        return "Lose, Paper beats Rock";
+    }
+  }
+  if(playerSelection === "SCISSORS"){
+    if(computerSelection === "SCISSORS"){
+        return "Draw, Scissors and Scissors";
+    }
+    if(computerSelection === "ROCK"){
+        return "Lose, Rock beats Scissors";
+    }
+    if(computerSelection === "PAPER"){
+        return "Win, Scissors beat Paper";
+    }
+  }
+  if(playerSelection === "PAPER"){
+    if(computerSelection === "SCISSORS"){
+        return "Lose, Scissors beats Paper";
+    }
+    if(computerSelection === "ROCK"){
+        return "Win, Paper beats Rock";
+    }
+    if(computerSelection === "PAPER"){
+        return "Draw, Paper and Paper";
+    }
+  }
+
+
+  
+}
+ function getComputerChoice(){
+    const options = ["ROCK","PAPER","SCISSORS"]
+    return options[Math.floor(Math.random() * 3)];
+
+ }
+ function game(x){
+console.log("BEGIN");
+  for (let i = 0; i < 5; i++) {
+    console.log(playRound(x, computerSelection));
+  }
+  console.log("GAME");
+ }
+const playerSelection = "rock";
+const computerSelection = getComputerChoice();
+console.log(playRound(playerSelection, computerSelection));
+
+  </script>
+</body>
+</html>
