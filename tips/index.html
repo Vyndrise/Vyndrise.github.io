@@ -14,7 +14,7 @@
         <div class="inputcard">
             <h2>Tip Calculator</h2>
             <h3>Total Tips</h3>
-            <input type="number" name="totalTips" id="totalTips"  required>
+            <input type="number" name="totalTips" id="totalTips" step="any" required>
             <h3>Number of Servers</h3>
             <input type="number" name="serverNo" id="serverNo" class="TipCalculator" value="1" required>
             <h3>Number of Cooks</h3>
@@ -41,9 +41,9 @@ function calculateTip(e, current) {
 }
 calculateSubmit.addEventListener('click',function(e){
     // values
-    const totalWhole = parseInt(document.querySelector("#totalTips").value);
-    const number_of_cooks = parseInt(document.querySelector("#cookNo").value);
-    const number_of_servers = parseInt(document.querySelector("#serverNo").value);
+    const totalWhole = parseFloat(document.querySelector("#totalTips").value);
+    const number_of_cooks = parseFloat(document.querySelector("#cookNo").value);
+    const number_of_servers = parseFloat(document.querySelector("#serverNo").value);
     const calculateSubmit = document.querySelector('#calculateSubmit');
     //function
     e.preventDefault();
