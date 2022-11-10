@@ -9,9 +9,8 @@ body {
     justify-content: center;
   }
   #bodyHolder{
-    width: 100%;
-    height: 300px;
-    width: 40%;
+
+    width: 350px;
 
   }
   #vynd{
@@ -23,31 +22,30 @@ body {
     padding-left: 20px;
 }
   #cardHolder{
-    width: 100%;
     display: flex;
     align-content: center;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
     background: #626262;
-    border-radius: 51px;
+    border-radius: 35px;
     padding: 20px;
     flex-direction: column;
   }
   .card{
-    width: 450px;
-    height: 300px;
-    border-radius: 30px;
+    width: 300px;
+    height: 200px;
+    border-radius: 20px;
     display: flex;
     margin: 10px;
     
   }
 
   .cardImage{
-    width: 200px;
+    width: 150px;
     height: 100%;
     background: #5c5c5c;
-    border-radius: 28px;
+    border-radius: 20px;
   }
   .cardBody{
     display: flex;
@@ -65,7 +63,7 @@ padding-left: 10%;
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
-font-size: 30px;
+font-size: 24px;
 line-height: 47px;
 color:#5c5c5c;
   }
@@ -81,13 +79,13 @@ color:#5c5c5c;
   .cardApps{
     background: linear-gradient(0deg, rgba(89, 34, 34, 0.35) 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(148.01deg, rgba(251, 56, 255, 0.35) 22.93%, rgba(255, 0, 0, 0.35) 30.7%, rgba(224, 60, 60, 0.00933333) 53.91%), #FFB6B6;
     border: 3px solid #C78B8B;
-    border-radius: 29px;  
+    border-radius: 20px;  
     transition: background 0.5s;
 }
   .cardApps:hover{
     background: linear-gradient(148.01deg, rgba(0, 26, 255, 0.35) 22.93%, rgba(51, 250, 250, 0.35) 37.3%, rgba(133, 255, 114, 0.217) 45.16%, rgba(255, 255, 255, 0.00933333) 51.67%, rgba(255, 255, 255, 0.00933333) 66.04%), #FFFFFF;
     border: 3px solid #575757;
-    border-radius: 29px;
+    border-radius: 20px;
 
     
   }
@@ -95,25 +93,25 @@ color:#5c5c5c;
   .cardStart{
     background: linear-gradient(0deg, rgba(48, 48, 48, 0.35) 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(148.01deg, rgba(0, 178, 255, 0.35) 22.93%, rgba(0, 26, 255, 0.35) 30.7%, rgba(60, 76, 224, 0.00933333) 53.91%), #B1B0CC;
     border: 3px solid #758BFF;
-    border-radius: 29px;
+    border-radius: 20px;
     transition: background 0.5s;
   }
   .cardStart:hover{
     background: linear-gradient(148.01deg, rgba(0, 26, 255, 0.35) 22.93%, rgba(51, 250, 250, 0.35) 37.3%, rgba(133, 255, 114, 0.217) 45.16%, rgba(255, 255, 255, 0.00933333) 51.67%, rgba(255, 255, 255, 0.00933333) 66.04%), #FFFFFF;
     border: 3px solid #575757;
-    border-radius: 29px;
+    border-radius: 20px;
 
     
   }
   .cardMP{
     background: linear-gradient(0deg, rgba(48, 48, 48, 0.35) 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(148.01deg, rgba(255, 61, 0, 0.35) 22.93%, rgba(250, 255, 0, 0.35) 30.7%, rgba(224, 198, 60, 0.00933333) 53.91%), #FFFDC2;
     border: 3px solid #FFF8B7;
-    border-radius: 29px;    transition: background 0.5s;
+    border-radius: 20px;    transition: background 0.5s;
   }
   .cardMP:hover{
     background: linear-gradient(148.01deg, rgba(0, 26, 255, 0.35) 22.93%, rgba(51, 250, 250, 0.35) 37.3%, rgba(133, 255, 114, 0.217) 45.16%, rgba(255, 255, 255, 0.00933333) 51.67%, rgba(255, 255, 255, 0.00933333) 66.04%), #FFFFFF;
     border: 3px solid #575757;
-    border-radius: 29px;
+    border-radius: 20px;
 
     
   }
