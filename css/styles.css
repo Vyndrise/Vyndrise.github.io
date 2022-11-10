@@ -1,105 +1,136 @@
 body {
-  margin: 0%;
-  padding: 0;
-  font-family: "Roboto", sans-serif;
-  background-color: black;
-  color: white;
-}
+    margin: 0%;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #5c5c5c;
+    color: #e7e7e7;
+    display:flex;
+    align-content: center;
+    justify-content: center;
+  }
+  #bodyHolder{
+    width: 100%;
+    height: 300px;
+    width: 40%;
 
-nav {
-  background: rgb(20, 20, 20);
-  color: white;
+  }
+  #vynd{
+    margin-bottom: 0;
+  }
+  #design{
+    margin-top: 0;
+    color:#d6ffdb;
+    padding-left: 20px;
 }
-/*
-  position: fixed;
-  top: 0;
-  overflow: hidden;
-  width: 100%;
-*/
-nav > h1 {
-  padding: 10px 30px;
-  margin: 0px;
-  font-size: 1.6rem;
-}
+  #cardHolder{
+    width: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background: #626262;
+    border-radius: 51px;
+    padding: 20px;
+    flex-direction: column;
+  }
+  .card{
+    width: 450px;
+    height: 300px;
+    border-radius: 30px;
+    display: flex;
+    margin: 10px;
+    
+  }
 
-.container {
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-/*
-.style-a {
-  background-color: #c4c4c4;
-}
-.style-b {
-  background-color: #a8a8a8;
-}
-*/
-.container-text {
-  display: flex;
-  align-items: center;
-}
-.container-text > h1 {
-  font-size: 48px;
-  text-align: center;
-}
-.card-holder {
-  display: flex;
-  overflow-x: auto;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  overflow-y: hidden;
-}
-.cards {
-  flex: 0 0 auto;
-  width: 250px;
-  height: 350px;
-  background: #0f0f0f;
-  border-radius: 20px;
-  margin: 30px;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-}
-.cards:hover {
-  transform: scale(1.05);
-  transition: all 0.18s ease-in-out;
-}
-.hip {
-  pointer-events: none;
-  align-items: center;
-  text-align: center;
-}
+  .cardImage{
+    width: 200px;
+    height: 100%;
+    background: #5c5c5c;
+    border-radius: 28px;
+  }
+  .cardBody{
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+  }
+  .cardTitle{
+    display:flex;
+  }
 
-.topz {
-  display: block;
-  overflow: auto;
-  position: absolute;
-  z-index: 1000;
-  overflow: hidden;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-}
-.clickable {
-  width: 100%;
-  height: 100%;
-  background-color: blanchedalmond;
-  padding: 0;
-  margin: 0;
-  border-radius: 20px;
-}
+  .cardTitle> h3{
+padding-left: 10%;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 47px;
+color:#5c5c5c;
+  }
+  .cardText{
+    display: flex;
+    padding-left: 10%;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+color:#5c5c5c;
+  }
 
-.app-stock {
-  background: url(stocks.svg);
+  .cardApps{
+    background: linear-gradient(0deg, rgba(89, 34, 34, 0.35) 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(148.01deg, rgba(251, 56, 255, 0.35) 22.93%, rgba(255, 0, 0, 0.35) 30.7%, rgba(224, 60, 60, 0.00933333) 53.91%), #FFB6B6;
+    border: 3px solid #C78B8B;
+    border-radius: 29px;  
+    transition: background 0.5s;
 }
-.app-gaming {
-  background: url(gaming.svg);
-}
-.app-start {
-  background: url(start.svg);
-}
+  .cardApps:hover{
+    background: linear-gradient(148.01deg, rgba(0, 26, 255, 0.35) 22.93%, rgba(51, 250, 250, 0.35) 37.3%, rgba(133, 255, 114, 0.217) 45.16%, rgba(255, 255, 255, 0.00933333) 51.67%, rgba(255, 255, 255, 0.00933333) 66.04%), #FFFFFF;
+    border: 3px solid #575757;
+    border-radius: 29px;
+
+    
+  }
+
+  .cardStart{
+    background: linear-gradient(0deg, rgba(48, 48, 48, 0.35) 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(148.01deg, rgba(0, 178, 255, 0.35) 22.93%, rgba(0, 26, 255, 0.35) 30.7%, rgba(60, 76, 224, 0.00933333) 53.91%), #B1B0CC;
+    border: 3px solid #758BFF;
+    border-radius: 29px;
+    transition: background 0.5s;
+  }
+  .cardStart:hover{
+    background: linear-gradient(148.01deg, rgba(0, 26, 255, 0.35) 22.93%, rgba(51, 250, 250, 0.35) 37.3%, rgba(133, 255, 114, 0.217) 45.16%, rgba(255, 255, 255, 0.00933333) 51.67%, rgba(255, 255, 255, 0.00933333) 66.04%), #FFFFFF;
+    border: 3px solid #575757;
+    border-radius: 29px;
+
+    
+  }
+  .cardMP{
+    background: linear-gradient(0deg, rgba(48, 48, 48, 0.35) 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(148.01deg, rgba(255, 61, 0, 0.35) 22.93%, rgba(250, 255, 0, 0.35) 30.7%, rgba(224, 198, 60, 0.00933333) 53.91%), #FFFDC2;
+    border: 3px solid #FFF8B7;
+    border-radius: 29px;    transition: background 0.5s;
+  }
+  .cardMP:hover{
+    background: linear-gradient(148.01deg, rgba(0, 26, 255, 0.35) 22.93%, rgba(51, 250, 250, 0.35) 37.3%, rgba(133, 255, 114, 0.217) 45.16%, rgba(255, 255, 255, 0.00933333) 51.67%, rgba(255, 255, 255, 0.00933333) 66.04%), #FFFFFF;
+    border: 3px solid #575757;
+    border-radius: 29px;
+
+    
+  }
+  a:hover,a:link, a:visited{
+    text-decoration: none;
+    color: inherit;
+  }
+  a{
+    color: inherit;
+  }
+  .iApps {
+    background: url(stocks.svg);
+  }
+  .iGaming {
+    background: url(gaming.svg);
+  }
+  .iStart {
+    background: url(start.svg);
+  }
+  
