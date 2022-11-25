@@ -97,3 +97,48 @@ input[type="number"]::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+
+#clrpContainer{
+  display: flex; padding: 10px; flex-wrap:wrap;
+}
+.clrp{
+  width: 60px;
+  height: 60px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+/* RPS */
+.rpsRow{
+  display:flex;
+  align-items: space-between;
+  justify-content: space-around;
+}
+.rpsORow{
+  display:flex;
+  align-items: space-between;
+  justify-content: space-around;
+}
+.rpsOP{
+  width: 60px;
+  height: 60px;
+  background:#c4c4c4;
+  margin: 5px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #212121;
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+.rpsG{
+  background-color: #d4ffac;
+}
+.rpsR{
+  background-color: #ffbdac;
+}
+.rpsY{
+  background-color:rgb(255, 245, 196);
+
+}

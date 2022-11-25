@@ -18,12 +18,12 @@
 </head>
 
 <body>
-    <div class="topFlex">   
-        <div>        <span class="tiles">
-            <h1> Apps</h1>
-        </span></div> 
+    <div class="topFlex">
+        <div> <span class="tiles">
+                <h1> Apps</h1>
+            </span></div>
 
-</div>
+    </div>
 
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
@@ -70,13 +70,49 @@
                 <h2>Randomizer</h2>
                 <h3>Limit</h3>
                 <input type="number" name="d6limit" id="d6limit" class="typed6" value="6" required>
-                <input type="submit" id ="d6submit" value="Roll">
+                <input type="submit" id="d6submit" value="Roll">
             </div>
-            <div class="card-out neu" id="netcard">
+            <div class="card-out neu" id="randomcard">
                 <h2>Randomizer Results</h2>
                 <h3 id="dice-result">
                     Result will be displayed here!
                 </h3>
+            </div>
+        </div>
+        <div class="card-lane">
+            <div class="card">
+                <h2>Color Pallet</h2>
+                <h3>HEX Code</h3>
+                <input type="text" name="hexcard" id="hexcard" class="hexy" required>
+                <input type="submit" id="hexsubmit" value="Add">
+            </div>
+            <div class="card-out neu" id="hexcard">
+                <h2>Color Saved</h2>
+                <div id="clrpContainer">
+
+                </div>
+            </div>
+            <!-- card for RPS -->
+            <div class="card">
+                <h2>
+                    RPS - First to 5 Wins
+                </h2>
+                <h3> Select Option</h3>
+                <div class="rpsRow">
+                    <div class="rpsOP" data-rps="ROCK">Rock</div>
+                    <div class="rpsOP" data-rps="PAPER">Paper</div>
+                    <div class="rpsOP" data-rps="SCISSORS">Scissors</div>
+                </div>
+                <h3>Machine Options</h3>
+                <div class="rpsORow">
+                    <div class="rpsOP" data-rpsm="ROCK">Rock</div>
+                    <div class="rpsOP" data-rpsm="PAPER">Paper</div>
+                    <div class="rpsOP" data-rpsm="SCISSORS">Scissors</div>
+                </div>
+            </div>
+            <div class="card-out neu" id="rpsOut">
+                <h2>RPS Results</h2>
+                <h3 id = "rpsResult"></h3>
             </div>
         </div>
     </div>

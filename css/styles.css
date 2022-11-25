@@ -2,7 +2,7 @@ body {
     margin: 0%;
     padding: 0;
     font-family: "Roboto", sans-serif;
-    background-color: #5c5c5c;
+    background-color: #232323;
     color: #e7e7e7;
     display:flex;
     align-content: center;
@@ -27,7 +27,7 @@ body {
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    background: #626262;
+    background: #1e1e1e;
     border-radius: 35px;
     padding: 20px;
     flex-direction: column;
@@ -38,12 +38,14 @@ body {
     border-radius: 20px;
     display: flex;
     margin: 10px;
-    
+    justify-content: space-between;
+    align-items: center;
   }
 
   .cardImage{
-    width: 150px;
-    height: 100%;
+    margin:5px;
+    width: 135px;
+    height: 95%;
     background: #5c5c5c;
     border-radius: 20px;
   }
@@ -123,12 +125,12 @@ color:#5c5c5c;
     color: inherit;
   }
   .iApps {
-    background: url(stocks.svg);
+    background: ;
   }
   .iGaming {
-    background: url(gaming.svg);
+    background: ;
   }
   .iStart {
-    background: url(start.svg);
+    background: ;
   }
   
