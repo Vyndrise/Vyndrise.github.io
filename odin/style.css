@@ -1,0 +1,31 @@
+body{
+    background-color: rgb(42, 42, 42);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(213, 213, 213);
+
+}
+
+#etch{
+    width: 600px;
+    height: 600px;
+    background-color: rgb(223, 223, 223);
+}
+.gridrow{
+    background-color:white;
+    display: flex;
+}
+.gridblock{
+
+    background-color: white;
+    transition: 0.3ms;
+    opacity: 1;
+}
+.gridblock:hover{
+    background-color: grey;
+}

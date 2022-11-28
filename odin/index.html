@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" async defer></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Etch-A-Sketch</title>
+</head>
+<body>
+    <h1>Etch-A-Sketch</h1>
+    <h2>Grid Size</h2>
+    <input id="gridslider" type="range" min="5" max="20" value="12">
+    <div>
+        <input type="radio" id="default" name="design" value="0" class ="opts" checked>
+        <label for="opacity">Default</label>
+        <input type="radio" id="opacity" name="design" value="1" class ="opts">
+        <label for="opacity">Opacity</label>
+        <input type="radio" id="rainbow" name="design" value="2" class ="opts" >
+        <label for="rainbow">Rainbow</label>
+        <input type="radio" id="erase" name="design" value="3" class ="opts">
+        <label for="javascript">Erase</label>
+    </div>
+
+
+
+    <input type="button" value="Create" id="etchbutton">
+    <!-- flex row = 500px/value -->
+    <div id = "etch">
+
+    </div>
+    
+
+</body>
+
+</html>
