@@ -142,3 +142,27 @@ input[type="number"] {
   background-color:rgb(255, 245, 196);
 
 }
+/* calculator */
+.calc-holder{
+  display:flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.calc-button{
+  height:60px ;
+  width: 60px;
+  margin: 5px;
+  font-size: 150%;
+border-radius: 10px;
+color:#3c3c3c;
+font-weight: 700;
+transition: 0.5ms;
+
+}
+.calc-button:hover{
+  background-color:#ffdbd2;
+  
+}

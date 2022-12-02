@@ -187,3 +187,4 @@ else{
     setInterval(function() {document.querySelector(`[data-rps ="${playerSelection}"]`).classList.remove('rpsY')}, 1100);
     setInterval(function() {document.querySelector(`[data-rpsm ="${computerSelection}"]`).classList.remove('rpsY')}, 1100);
   }
+
