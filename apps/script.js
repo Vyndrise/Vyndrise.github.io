@@ -92,6 +92,7 @@ hexsubmit.addEventListener('click', function(e){
   const tempcolor = document.querySelector('#hexcard').value;
   console.log(typeof tempcolor)
   colorDef.style.backgroundColor = tempcolor;
+  colorDef.innerText=tempcolor;
   document.querySelector('#clrpContainer').appendChild(colorDef);
   e.preventDefault;
   })
